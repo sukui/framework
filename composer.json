@@ -1,5 +1,19 @@
 {
   "name": "zanphp/framework",
+  "repositories": {
+    "0": {
+      "type": "git",
+      "url": "https://github.com/sukui/nova.git"
+    },
+    "1": {
+      "type": "git",
+      "url": "https://github.com/sukui/http-client.git"
+    },
+    "2": {
+      "type": "git",
+      "url": "https://github.com/sukui/database.git"
+    }
+  },
   "require": {
     "php": ">=5.6",
     "psr/log": "1.0.0",
@@ -19,19 +33,19 @@
     "zanphp/hawk": "dev-master",
     "zanphp/console": "dev-master",
     "zanphp/dns-client": "dev-master",
-    "zanphp/database": "dev-master",
+    "zanphp/database": "dev-laogui",
     "zanphp/debugger": "dev-master",
     "zanphp/connection-pool": "dev-master",
     "zanphp/trace": "dev-master",
     "zanphp/log": "dev-master",
     "zanphp/nosql": "dev-master",
     "zanphp/rpc-context": "dev-master",
-    "zanphp/http-client": "dev-master",
+    "zanphp/http-client": "dev-laogui",
     "zanphp/http-foundation": "dev-master",
     "zanphp/routing": "dev-master",
     "zanphp/service-store": "dev-master",
     "zanphp/utilities": "dev-master",
-    "zanphp/nova": "dev-master",
+    "zanphp/nova": "dev-laogui",
     "zanphp/nova-codec": "dev-master",
     "zanphp/nova-generic": "dev-master",
     "zanphp/nova-connection-pool": "dev-master",

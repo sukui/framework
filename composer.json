@@ -36,7 +36,7 @@
     "zanphp/database": "dev-laogui",
     "zanphp/debugger": "dev-master",
     "zanphp/connection-pool": "dev-laogui",
-    "zanphp/trace": "dev-master",
+    "zanphp/trace": "dev-laogui",
     "zanphp/log": "dev-laogui",
     "zanphp/nosql": "dev-master",
     "zanphp/rpc-context": "dev-master",

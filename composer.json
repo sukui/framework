@@ -26,7 +26,7 @@
     "zanphp/container": "dev-master",
     "zanphp/contracts": "dev-master",
     "zanphp/loadbalance": "dev-master",
-    "zanphp/service-chain": "dev-master",
+    "zanphp/service-chain": "dev-laogui",
     "zanphp/spi": "dev-master",
     "zanphp/config": "dev-master",
     "zanphp/support": "dev-master",

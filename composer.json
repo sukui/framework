@@ -12,6 +12,10 @@
     "2": {
       "type": "git",
       "url": "https://github.com/sukui/database.git"
+    },
+    "4": {
+      "type": "git",
+      "url": "https://github.com/sukui/routing.git"
     }
   },
   "require": {
@@ -42,7 +46,7 @@
     "zanphp/rpc-context": "dev-master",
     "zanphp/http-client": "dev-laogui",
     "zanphp/http-foundation": "dev-master",
-    "zanphp/routing": "dev-master",
+    "zanphp/routing": "dev-laogui",
     "zanphp/service-store": "dev-master",
     "zanphp/utilities": "dev-master",
     "zanphp/nova": "dev-laogui",

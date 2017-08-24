@@ -10,12 +10,14 @@ use Zan\Framework\Foundation\View\View;
 use Zan\Framework\Contract\Network\Request;
 use Zan\Framework\Utilities\DesignPattern\Context;
 use Zan\Framework\Foundation\View\JsVar;
+use ZanPHP\HttpFoundation\Response\Cookie;
 use ZanPHP\HttpFoundation\Response\FileResponse;
 
 class HttpController extends Controller
 {
     protected $viewData = [];
     protected $jsVar = null;
+    protected $cookie = [];
 
     public function __construct(Request $request, Context $context)
     {
@@ -57,7 +59,11 @@ class HttpController extends Controller
 
     public function output($content)
     {
-        return new Response($content);
+        $response = new Response($content);
+        if(!empty($this->cookie)){
+            $response->withCookies($this->cookie);
+        }
+        return $response;
     }
 
     private function setupQiniu()
@@ -87,7 +93,11 @@ class HttpController extends Controller
 
     public function sendFile($filepath, array $headers = [])
     {
-        return new FileResponse($filepath, 200, $headers);
+        $response = new FileResponse($filepath, 200, $headers);
+        if(!empty($this->cookie)){
+            $response->withCookies($this->cookie);
+        }
+        return $response;
     }
 
     public function assign($key, $value)
@@ -102,11 +112,23 @@ class HttpController extends Controller
             'msg'  => $msg,
             'data' => $data,
         ];
-        return new JsonResponse($data);
+        $response = new JsonResponse($data);
+        if(!empty($this->cookie)){
+            $response->withCookies($this->cookie);
+        }
+        return $response;
     }
 
     public function redirect($url, $code = 302)
     {
-        return RedirectResponse::create($url, $code);
+        $response = RedirectResponse::create($url, $code);
+        if(!empty($this->cookie)){
+            $response->withCookies($this->cookie);
+        }
+        return $response;
+    }
+
+    public function setCookie(Cookie $cookie){
+        $this->cookie[] = $cookie;
     }
 }

@@ -128,7 +128,7 @@ class HttpController extends Controller
         return $response;
     }
 
-    public function setCookie(Cookie $cookie){
-        $this->cookie[] = $cookie;
+    public function setCookie($name, $value = null, $expire = 0, $path = '/', $domain = null, $secure = false, $httpOnly = true){
+        $this->cookie[] = new Cookie($name, $value, $expire, $path, $domain, $secure, $httpOnly );
     }
 }

@@ -6,6 +6,7 @@ namespace ZanPHP\Framework\Foundation\Domain;
 use ZanPHP\Contracts\Config\Repository;
 use ZanPHP\Contracts\Network\Request;
 use ZanPHP\Coroutine\Context;
+use ZanPHP\HttpFoundation\Response\Cookie;
 use ZanPHP\HttpFoundation\Response\FileResponse;
 use ZanPHP\HttpFoundation\Response\JsonResponse;
 use ZanPHP\HttpFoundation\Response\RedirectResponse;

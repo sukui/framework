@@ -58,9 +58,9 @@ class HttpController extends Controller
         return $this->jsVar->get();
     }
 
-    public function output($content)
+    public function output($content,$code=200)
     {
-        $response = new Response($content);
+        $response = new Response($content,$code);
         if(!empty($this->cookie)){
             $response->withCookies($this->cookie);
         }

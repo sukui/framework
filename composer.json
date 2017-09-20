@@ -36,7 +36,7 @@
     "zanphp/support": "dev-master",
     "zanphp/hawk": "dev-master",
     "zanphp/console": "dev-master",
-    "zanphp/dns-client": "dev-master",
+    "zanphp/dns-client": "dev-laogui",
     "zanphp/database": "dev-laogui",
     "zanphp/debugger": "dev-master",
     "zanphp/connection-pool": "dev-laogui",

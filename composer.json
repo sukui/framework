@@ -1,23 +1,5 @@
 {
   "name": "zanphp/framework",
-  "repositories": {
-    "0": {
-      "type": "git",
-      "url": "https://github.com/sukui/nova.git"
-    },
-    "1": {
-      "type": "git",
-      "url": "https://github.com/sukui/http-client.git"
-    },
-    "2": {
-      "type": "git",
-      "url": "https://github.com/sukui/database.git"
-    },
-    "4": {
-      "type": "git",
-      "url": "https://github.com/sukui/routing.git"
-    }
-  },
   "require": {
     "php": ">=5.6",
     "psr/log": "1.0.0",

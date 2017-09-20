@@ -48,7 +48,7 @@
     "zanphp/http-foundation": "dev-master",
     "zanphp/routing": "dev-laogui",
     "zanphp/service-store": "dev-master",
-    "zanphp/utilities": "dev-master",
+    "zanphp/utilities": "dev-laogui",
     "zanphp/nova": "dev-laogui",
     "zanphp/nova-codec": "dev-master",
     "zanphp/nova-generic": "dev-laogui",

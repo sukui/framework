@@ -45,7 +45,7 @@
     "zanphp/nosql": "dev-master",
     "zanphp/rpc-context": "dev-master",
     "zanphp/http-client": "dev-laogui",
-    "zanphp/http-foundation": "dev-master",
+    "zanphp/http-foundation": "dev-laogui",
     "zanphp/routing": "dev-laogui",
     "zanphp/service-store": "dev-master",
     "zanphp/utilities": "dev-laogui",

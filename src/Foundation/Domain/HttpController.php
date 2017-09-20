@@ -3,6 +3,7 @@
 
 namespace ZanPHP\Framework\Foundation\Domain;
 
+use Kdt\Iron\Nova\Foundation\Protocol\TStruct;
 use ZanPHP\Contracts\Config\Repository;
 use ZanPHP\Contracts\Network\Request;
 use ZanPHP\Coroutine\Context;
@@ -109,6 +110,23 @@ class HttpController extends Controller
 
     public function r($code, $msg, $data)
     {
+        if($data instanceof TStruct){
+            $data = $data->getData();
+            foreach ($data as $key=>$value){
+                if(is_array($value)){
+                    $temp = [];
+                    foreach ($value as $k => $v){
+                        if($v instanceof TStruct){
+                            $temp[$k] = $v->getData();
+                        }else{
+                            $temp[$k] = $v;
+                        }
+                    }
+                    $data[$key] = $temp;
+                }
+            }
+        }
+
         $data = [
             'code' => $code,
             'msg'  => $msg,

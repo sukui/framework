@@ -43,7 +43,7 @@
     "zanphp/trace": "dev-laogui",
     "zanphp/log": "dev-laogui",
     "zanphp/nosql": "dev-laogui",
-    "zanphp/rpc-context": "dev-master",
+    "zanphp/rpc-context": "dev-laoguicd ",
     "zanphp/http-client": "dev-laogui",
     "zanphp/http-foundation": "dev-laogui",
     "zanphp/routing": "dev-laogui",

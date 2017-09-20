@@ -7,7 +7,6 @@
     "zan-config/zan": "dev-master",
     "zanphp/cache": "dev-master",
     "zanphp/exception": "dev-master",
-    "zanphp/coroutine": "dev-laogui",
     "zanphp/timer": "dev-master",
     "zanphp/container": "dev-master",
     "zanphp/contracts": "dev-master",

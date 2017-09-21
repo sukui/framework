@@ -34,7 +34,7 @@
     "zanphp/nova": "dev-laogui",
     "zanphp/nova-codec": "dev-master",
     "zanphp/nova-generic": "dev-laogui",
-    "zanphp/nova-connection-pool": "dev-master",
+    "zanphp/nova-connection-pool": "dev-laogui",
     "zanphp/etcd-client": "dev-laogui",
     "zanphp/etcd-registry": "dev-laogui",
     "zanphp/validation": "dev-master",

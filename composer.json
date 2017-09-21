@@ -9,7 +9,7 @@
     "zanphp/exception": "dev-master",
     "zanphp/coroutine": "dev-laogui",
     "zanphp/timer": "dev-master",
-    "zanphp/container": "dev-master",
+    "zanphp/container": "dev-laogui",
     "zanphp/contracts": "dev-master",
     "zanphp/loadbalance": "dev-master",
     "zanphp/service-chain": "dev-laogui",
